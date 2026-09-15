@@ -1,10 +1,4 @@
-# Prompt Log — About Section
-
-> The example below shows the expected structure (context + goal + constraints +
-> format). Replace the prompt, raw output, edited version, and reflection with your
-> own real interaction before submitting — fabricating this log is an academic
-> integrity violation under the assignment brief.
-
+# Prompt log About section copy
 ## Prompt I used
 
 ```
