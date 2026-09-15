@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anotidaishe A Sanganza | Software Engineer</title>
+  <meta name="description" content="Portfolio and contact page for Anotidaishe A Sanganza, a Software Engineering student at Africa University.">
+  <style>
+    /* Dark-theme layout — a deliberately different visual approach from a light card layout. */
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 2rem 1.25rem; }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 { margin: 0; font-size: 1.9rem; }
+    header .role { color: var(--accent); font-weight: 600; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.25rem;
+      padding: 0;
+      margin: 1rem 0 0;
+      width: 100%;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0.2rem;
+    }
+    nav a:hover, nav a:focus { color: var(--accent); border-color: var(--accent); }
+
+    section { margin-bottom: 2.75rem; }
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    dl.skills { display: grid; grid-template-columns: max-content 1fr; gap: 0.5rem 1rem; }
+    dl.skills dt { color: var(--muted); font-weight: 600; }
+    dl.skills dd { margin: 0; }
+
+    article.work {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.9rem;
+    }
+    article.work h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+    article.work p { margin: 0; color: var(--muted); }
+
+    aside.callout {
+      border-left: 3px solid var(--accent);
+      background: var(--surface);
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    form { display: grid; gap: 1.1rem; max-width: 480px; }
+    .row { display: flex; flex-direction: column; gap: 0.35rem; }
+    label { font-size: 0.9rem; color: var(--muted); }
+    input, textarea, select {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 0.6rem 0.75rem;
+      font: inherit;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    button {
+      background: var(--accent);
+      color: #0f172a;
+      border: none;
+      font-weight: 700;
+      padding: 0.65rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      justify-self: start;
+    }
+    button:hover { opacity: 0.9; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>Anotidaishe A Sanganza</h1>
+      <p class="role">Software Engineer in training</p>
+    </div>
+    <nav aria-label="Page sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p>
+        I'm a Software Engineering student at Africa University, early in my
+        journey into web development and still figuring out how the pieces fit
+        together. Right now I'm focused on building a solid foundation in HTML,
+        CSS, and how AI tools can support a developer's workflow without
+        replacing the thinking part. This page is one of the first things I've
+        built from scratch, and I'm using it to track what I learn as I go.
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>HTML5, CSS3, and getting started with JavaScript</dd>
+        <dt>Currently learning</dt>
+        <dd>Tailwind CSS and responsive design, for the Unit III assignment</dd>
+        <dt>Tools</dt>
+        <dd>VS Code, Git, and GitHub</dd>
+      </dl>
+    </section>
+
+    <section id="work" aria-labelledby="work-h">
+      <h2 id="work-h">Work</h2>
+
+      <article class="work">
+        <h3>Profile & Portfolio Page</h3>
+        <p>This site — a semantic HTML5 profile page with a validated contact form, built for the CIS2103 Web Technologies coursework.</p>
+      </article>
+
+      <article class="work">
+        <h3>CIS2103 Practical Exercises</h3>
+        <p>Smaller HTML5 exercises from the Web Technologies practical sessions covering semantic markup, forms, and accessibility basics.</p>
+      </article>
+
+    </section>
+
+    <section aria-labelledby="review-h">
+      <h2 id="review-h">Peer Review</h2>
+      <aside class="callout" aria-label="Accessibility feedback note">
+        The accessibility issue a classmate flagged in Thursday's peer review,
+        and the fix applied, is documented in full in <code>README.md</code>
+        under "Accessibility Issue &amp; Fix."
+      </aside>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Get in Touch</h2>
+      <form action="#" method="post">
+
+        <div class="row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name">
+        </div>
+
+        <div class="row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="sanganzaa@africau.edu">
+        </div>
+
+        <div class="row">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s-]{7,15}$" placeholder="+263 7X XXX XXXX" aria-describedby="phone-hint">
+          <small id="phone-hint" style="color:var(--muted)">Optional — digits, spaces, + and - only.</small>
+        </div>
+
+        <div class="row">
+          <label for="topic">What's this about?</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose one</option>
+            <option value="internship">Internship / job lead</option>
+            <option value="project">Project collaboration</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Write your message..."></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Anotidaishe A Sanganza — built for CIS2103, Africa University.</p>
+  </footer>
+
+</div>
+</body>
+</html>
